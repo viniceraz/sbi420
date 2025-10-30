@@ -39,9 +39,18 @@ export function Hero({ language }: HeroProps) {
           <p className="font-mono text-base text-[#000000] mb-8 leading-relaxed text-center">{t.description}</p>
 
           <div className="flex gap-4 justify-center">
-            <button className="retro-button bg-[#C0C0C0] border-4 border-t-[#FFFFFF] border-l-[#FFFFFF] border-r-[#808080] border-b-[#808080] px-8 py-3 font-mono font-bold text-[#000000] hover:border-t-[#808080] hover:border-l-[#808080] hover:border-r-[#FFFFFF] hover:border-b-[#FFFFFF] active:border-t-[#000000] active:border-l-[#000000] active:border-r-[#DFDFDF] active:border-b-[#DFDFDF] transition-all">
-              {t.enterButton}
-            </button>
+           <button
+  onClick={() =>
+    window.open(
+      "https://luminex.io/spark/trade/0291201b807d361fa61aee12364b9711a1515938bba9dd9f784ff193bfe7459b33",
+      "_blank"
+    )
+  }
+  className="retro-button bg-[#C0C0C0] border-4 border-t-[#FFFFFF] border-l-[#FFFFFF] border-r-[#808080] border-b-[#808080] px-8 py-3 font-mono font-bold text-[#000000] hover:border-t-[#808080] hover:border-l-[#808080] hover:border-r-[#FFFFFF] hover:border-b-[#FFFFFF] active:border-t-[#000000] active:border-l-[#000000] active:border-r-[#DFDFDF] active:border-b-[#DFDFDF] transition-all"
+>
+  {t.enterButton}
+</button>
+
             <button className="retro-button bg-[#C0C0C0] border-4 border-t-[#FFFFFF] border-l-[#FFFFFF] border-r-[#808080] border-b-[#808080] px-8 py-3 font-mono font-bold text-[#000000] hover:border-t-[#808080] hover:border-l-[#808080] hover:border-r-[#FFFFFF] hover:border-b-[#FFFFFF] active:border-t-[#000000] active:border-l-[#000000] active:border-r-[#DFDFDF] active:border-b-[#DFDFDF] transition-all">
               {t.chartsButton}
             </button>
