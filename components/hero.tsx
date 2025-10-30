@@ -51,9 +51,16 @@ export function Hero({ language }: HeroProps) {
   {t.enterButton}
 </button>
 
-            <button className="retro-button bg-[#C0C0C0] border-4 border-t-[#FFFFFF] border-l-[#FFFFFF] border-r-[#808080] border-b-[#808080] px-8 py-3 font-mono font-bold text-[#000000] hover:border-t-[#808080] hover:border-l-[#808080] hover:border-r-[#FFFFFF] hover:border-b-[#FFFFFF] active:border-t-[#000000] active:border-l-[#000000] active:border-r-[#DFDFDF] active:border-b-[#DFDFDF] transition-all">
-              {t.chartsButton}
-            </button>
+            <button
+  onClick={() => {
+    alert("THERE IS NO CHART")
+    window.open("https://x.com/sbi42069", "_blank")
+  }}
+  className="retro-button bg-[#C0C0C0] border-4 border-t-[#FFFFFF] border-l-[#FFFFFF] border-r-[#808080] border-b-[#808080] px-8 py-3 font-mono font-bold text-[#000000] hover:border-t-[#808080] hover:border-l-[#808080] hover:border-r-[#FFFFFF] hover:border-b-[#FFFFFF] active:border-t-[#000000] active:border-l-[#000000] active:border-r-[#DFDFDF] active:border-b-[#DFDFDF] transition-all"
+>
+  {t.chartsButton}
+</button>
+
           </div>
         </div>
       </div>
